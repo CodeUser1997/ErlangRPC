@@ -6,7 +6,7 @@ Erlang RPC application based on TCP/IP protocol.
 
 ## 1.build this code
 
-**command:** `erlc -0 ./bin ./src/*.erl`
+**command:** `erlc -o ./ebin ./src/*.erl`
 
 ## 2.run shell
 
@@ -30,3 +30,9 @@ init:stop().
 ok
 Connection closed by foreign host.
 ```
+
+# Creat EDoc
+
+**command:** `erl`(在更目录下执行)
+
+**command:** `edoc:application(tcp_rpc, ".", []).`
